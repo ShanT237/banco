@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="350.0" style="-fx-background-color: #2f3056;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.co.GUI.Grafica">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #2a2b4f;">
+         <children>
+            <Text fill="#c5c6ea" layoutX="125.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banco S.A.T" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="360.0" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #2a2b4f;">
+         <children>
+            <Button layoutX="104.0" layoutY="9.0" mnemonicParsing="false" onAction="#crearCuenta" prefHeight="53.0" prefWidth="142.0" style="-fx-background-color: #f27362;" text="Crear Cuenta" textFill="#c5c6ea">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="20.0" layoutY="80.0" text="NOMBRE" textFill="#c5c6ea">
+         <font>
+            <Font name="Roboto Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreTextField" layoutX="20.0" layoutY="102.0" onAction="#nombre" opacity="0.47" prefHeight="25.0" prefWidth="310.0" promptText="Ingrese su nombre" style="-fx-text-inner-color: #ffffff; -fx-background-color: #2f3056; -fx-border-color: #c5c6ea;">
+         <effect>
+            <GaussianBlur radius="1.0" />
+         </effect>
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="138.0" text="APELLIDOS" textFill="#c5c6ea">
+         <font>
+            <Font name="Roboto Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apellidosTextField" layoutX="20.0" layoutY="160.0" onAction="#apellidos" opacity="0.47" prefHeight="25.0" prefWidth="310.0" promptText="Ingrese sus apellidos" style="-fx-background-color: #2f3056; -fx-text-inner-color: #ffffff; -fx-border-color: #c5c6ea;">
+         <effect>
+            <GaussianBlur radius="1.0" />
+         </effect>
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="193.0" text="NUMERO DE CUENTA" textFill="#c5c6ea">
+         <font>
+            <Font name="Roboto Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="248.0" text="SALDO" textFill="#c5c6ea">
+         <font>
+            <Font name="Roboto Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="saldoTextField" layoutX="20.0" layoutY="269.0" onAction="#saldo" opacity="0.47" prefHeight="25.0" prefWidth="310.0" promptText="Ingrese su saldo" style="-fx-background-color: #2f3056; -fx-border-color: #c5c6ea; -fx-text-inner-color: #ffffff;">
+         <effect>
+            <GaussianBlur radius="1.0" />
+         </effect>
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="numeroCuentaPasswordField" layoutX="20.0" layoutY="215.0" opacity="0.47" prefHeight="25.0" prefWidth="310.0" promptText="Ingrese su numero de cuenta" style="-fx-background-color: #2f3056; -fx-border-color: #c5c6ea; -fx-text-inner-color: #ffffff;">
+         <effect>
+            <GaussianBlur radius="1.0" />
+         </effect>
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </PasswordField>
+      <ChoiceBox fx:id="tipoBox" layoutX="20.0" layoutY="321.0" opacity="0.8" prefWidth="150.0" style="-fx-border-color: #c5c6ea; -fx-text-color: #ffffff; -fx-background-color: #c5c6ea;">
+         <effect>
+            <GaussianBlur radius="1.0" />
+         </effect>
+      </ChoiceBox>
+      <Label layoutX="20.0" layoutY="300.0" text="TIPO DE CUENTA" textFill="#c5c6ea">
+         <font>
+            <Font name="Roboto Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
